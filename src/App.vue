@@ -1,6 +1,7 @@
 <template>
   <Header/>
   <TopSection/>
+  <Features/>
  
 </template>
 
@@ -8,11 +9,13 @@
 
 import Header from "./components/Header.vue"
 import TopSection from "./components/SectionWidget.vue"
+import Features from "./components/section-features.vue"
 export default {
   name: "App",
   components: {
     Header,
     TopSection,
+    Features
 
   },
 };

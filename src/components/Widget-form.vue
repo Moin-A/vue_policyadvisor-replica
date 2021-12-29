@@ -13,9 +13,7 @@
           <div class="col pl-0">    
            <input type="radio" name="gender" class="d-none" id="sel2"/> 
           <label name="gender" class="nsmok btn  w-100 my-2" for="sel2">Women</label>   
-         
           </div>
-      
         </div>
         </div>
         </div>
@@ -32,12 +30,8 @@
            <input type="radio" name="smoker" class="d-none" id="nonsmoker"/> 
           <label name="gender" class="nsmok btn  w-100 my-2" for="nonsmoker">Non Smoker</label>   
           </div>
-          
-       
-        </div>  
-      
+        </div>        
         </div>
-        
         </div>
         <!-- //---Date of Birth-------// -->
         <div class="row mt-3">
@@ -48,26 +42,17 @@
           <div class="col-11  pr-0">     
           <input id="branding_date_of_birth" name="branding_date_of_birth" pattern="[0-9]*" inputmode="numeric" type="text" placeholder="DD/MM/YYYY" blur="function () { [native code] }" class="form-control form__input form__input--error">
           </div>
-       
-      
         </div>
         </div>
         </div>
          <div class="col-7"> 
-        
          <p>Postal Code</p>   
           <div class="row  m-0">  
-         
-        
           <div class="col pl-0">    
          <input type="text" id="post_code" name="post_code" placeholder="A1A 1A1" class="form-control form__input">
           </div>
-          
-       
         </div>  
-      
         </div>
-        
         </div>
          <!-- //---TERM-------// -->
          <div class="row mt-3">
@@ -110,10 +95,21 @@
       
         </div>
         
-        </div>
-        
-
+         </div>
+       
     </div>
+     <div class="form-submit p-4">
+       <div class="row">
+          <div class="col monthly-prem">
+            <span class="font-weight-bold">Monthly Premium</span>
+            <div>---</div>
+          </div>
+          <div class="col m-auto">
+            <button type="submit" class="btn btn-lg text-white">Compare Quotes </button>
+          </div>
+       </div>
+        </div>
+
 </template>
 
 
@@ -135,10 +131,9 @@ box-shadow: 0px 3px 10px rgb(0 0 0 / 10%);
 background: #ffffff;
     -webkit-box-shadow: 0px 3px 10px rgb(0 0 0 / 10%);
     box-shadow: 0px 3px 10px rgb(0 0 0 / 10%);
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
     border-top: 8px solid #17b3e4;
     margin: auto;
+    font-family: lato,sans-serif;
 }
 
 h4 ,p{
@@ -188,6 +183,10 @@ input[type=range]::-webkit-slider-thumb {
   display: flex;
   flex-direction: column;
 }
+
+.form-submit {
+  background:#E5FAFF;
+}
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
@@ -196,5 +195,21 @@ input[type=range]::-webkit-slider-thumb {
   background: #04AA6D; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
+
+.btn-lg {
+background:#d81671;
+font-weight: 600;
+
+}
+
+.monthly-prem div {
+  font-size: 34px;
+    font-weight: 600;
+    line-height: 41px;
+    min-height: 50px;
+    color: #17b3e4;
+}
+
+
 
 </style>
