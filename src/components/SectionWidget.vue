@@ -2,13 +2,12 @@
 <div class="position-relative">
    <div class="hero-image"  >      
    </div> 
- 
       <div class="row main-content justify-content-around mx-sm-5 pt-5 mx-2">   
-     <div class="col-lg-4 main-content_text"><p>The easiest way to get a life insurance policy online</p></div>
-     <div class="col-lg-6 col-md-8 col-sm-8 col-xl-5 col">
-       <Widget/>
-     </div>
-   </div>  
+      <div class="col-lg-4 main-content_text text-white"><p>The easiest way to get a life insurance policy online</p></div>
+      <div class="col-lg-6 col-md-8 col-sm-8 col-xl-4 col">
+      <Widget/>
+    </div>
+    </div>  
    </div>
 </template>
 
@@ -19,7 +18,8 @@ export default {
 name:"TopSection",
 components:{
   Widget 
-}
+},
+
  
 }
 

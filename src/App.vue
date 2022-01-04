@@ -1,21 +1,25 @@
 <template>
-  <Header/>
+  <LayoutDefault>
   <TopSection/>
   <Features/>
+  </LayoutDefault>
  
 </template>
 
 <script>
 
-import Header from "./components/Header.vue"
+
 import TopSection from "./components/SectionWidget.vue"
 import Features from "./components/section-features.vue"
+import LayoutDefault from "./components/Layouts/Default_layout.vue"
+
 export default {
   name: "App",
   components: {
-    Header,
+    LayoutDefault,
     TopSection,
-    Features
+    Features,
+
 
   },
 };
