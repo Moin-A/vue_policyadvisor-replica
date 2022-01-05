@@ -5418,6 +5418,11 @@
   "resolved" "https://registry.npmjs.org/lodash.uniq/-/lodash.uniq-4.5.0.tgz"
   "version" "4.5.0"
 
+"lodash.uniqueid@^4.0.1":
+  "integrity" "sha1-MmjyanyI5PSxdY1nknGBTjH6WyY="
+  "resolved" "https://registry.npmjs.org/lodash.uniqueid/-/lodash.uniqueid-4.0.1.tgz"
+  "version" "4.0.1"
+
 "lodash@^4.17.11", "lodash@^4.17.14", "lodash@^4.17.15", "lodash@^4.17.19", "lodash@^4.17.3":
   "integrity" "sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA=="
   "resolved" "https://registry.npmjs.org/lodash/-/lodash-4.17.20.tgz"
@@ -8521,6 +8526,11 @@
   "integrity" "sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw=="
   "resolved" "https://registry.npmjs.org/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz"
   "version" "1.9.1"
+
+"vue-unique-id@^3.2.1":
+  "integrity" "sha512-Ih4vw3nx5O0M0q16Omx23T6VQW5U+RD16SEEbGa+aJWLJxFco8slQN6z6GUuzwgREgofH3ns9n7a97qr6DI73g=="
+  "resolved" "https://registry.npmjs.org/vue-unique-id/-/vue-unique-id-3.2.1.tgz"
+  "version" "3.2.1"
 
 "vue@^2 || ^3.0.0-0", "vue@^3.0.0-0", "vue@3.0.0":
   "integrity" "sha512-ZMrAARZ32sGIaYKr7Fk2GZEBh/VhulSrGxcGBiAvbN4fhjl3tuJyNFbbbLFqGjndbLoBW66I2ECq8ICdvkKdJw=="

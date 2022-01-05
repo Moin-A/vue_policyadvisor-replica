@@ -5,12 +5,15 @@
 
 			<Selectbtn
 				:col="5"
-				v-bind:innertext="innerText"
+				:innertext="innerText"
+				inputname="gender"
+				
 			/>
 
 			<Selectbtn
 				:col="5"
-				v-bind:innertext="innerText"
+				:innertext="innerText"
+				inputname="smoking"
 			/>
 
 		</div>
@@ -124,7 +127,7 @@
 				},
 			}
 		},
-
+		
 		components: {
 			Selectbtn,
 		},
