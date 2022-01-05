@@ -4,7 +4,7 @@
 			<div class="col-4 col-lg-2 my-auto">
 				<img
 					alt="Vue logo"
-					src="../images/policyadvisor-logo.svg"
+					src="../../images/policyadvisor-logo.svg"
 				/>
 			</div>
 			<div class="row">
@@ -15,7 +15,7 @@
 				<div class="px-2">
 					<img
 						alt="Vue logo"
-						src="../assets/profile-logo.png"
+						src="../../assets/profile-logo.png"
 					/>
 				</div>
 			</div>

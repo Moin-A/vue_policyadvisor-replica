@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import Features from  "./Features.vue"
+import Features from  "../UI/Features.vue"
 
 export default {
    name:"SectionFeatures",

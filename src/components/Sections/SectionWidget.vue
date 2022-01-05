@@ -12,7 +12,7 @@
 </template>
 
 <script>
- import Widget from "./Widget-form.vue";
+ import Widget from "../UI/Widget-form.vue";
 
 export default {
 name:"TopSection",

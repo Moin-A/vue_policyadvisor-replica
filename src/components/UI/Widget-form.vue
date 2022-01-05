@@ -18,40 +18,18 @@
 
 		</div>
 		<!-- //---Date of Birth-------// -->
+		
 		<div class="row mt-3">
-			<div class="col-5">
-				<div>
-					<p>Date of Birth</p>
-					<div class="row">
-						<div class="col-11 pr-0">
-							<input
-								id="branding_date_of_birth"
-								name="branding_date_of_birth"
-								pattern="[0-9]*"
-								inputmode="numeric"
-								type="text"
-								placeholder="DD/MM/YYYY"
-								blur="function () { [native code] }"
-								class="form-control form__input form__input--error"
-							/>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-7">
-				<p>Postal Code</p>
-				<div class="row m-0">
-					<div class="col pl-0">
-						<input
-							type="text"
-							id="post_code"
-							name="post_code"
-							placeholder="A1A 1A1"
-							class="form-control form__input"
-						/>
-					</div>
-				</div>
-			</div>
+			<InputBTNTEXT
+			:col="5"
+			titletext="Date of Birth"
+			/>	
+			<InputBTNTEXT
+			:col="5"
+			titletext="Date of Birth"
+			/>	
+
+			
 		</div>
 		<!-- //---TERM-------// -->
 		<div class="row mt-3">
@@ -114,7 +92,8 @@
 </template>
 
 <script>
-	import Selectbtn from './form/Selectbtn_Toggle.vue'
+	import Selectbtn from '../form/Selectbtn_Toggle.vue'
+	import InputBTNTEXT  from '../form/Inputbtn-Text'
 
 	export default {
 		name: 'Widget',
@@ -130,6 +109,7 @@
 		
 		components: {
 			Selectbtn,
+			InputBTNTEXT
 		},
 		createperson: function (firstName, lastName) {
 			this.firstName = firstName

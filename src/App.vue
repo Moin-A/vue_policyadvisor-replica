@@ -9,8 +9,8 @@
 <script>
 
 
-import TopSection from "./components/SectionWidget.vue"
-import Features from "./components/section-features.vue"
+import TopSection from "./components/Sections/SectionWidget.vue"
+import Features from "./components/Sections/section-features.vue"
 import LayoutDefault from "./components/Layouts/Default_layout.vue"
 
 export default {

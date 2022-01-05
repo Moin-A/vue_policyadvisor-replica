@@ -1,6 +1,6 @@
 <script>
-import Footer from '../Footer.vue'
-import Header from '../Header.vue'
+import Footer from '../Marginals/Footer.vue'
+import Header from '../Marginals/Header.vue'
 
 
 export default {

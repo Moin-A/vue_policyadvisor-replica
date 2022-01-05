@@ -6,7 +6,7 @@
 					<img
 						class="logo    pb-4"
 						alt="Vue logo"
-						src="../images/policyadvisor-logo.svg"
+						src="../../images/policyadvisor-logo.svg"
 					/>
 				</a>
 				<a>
@@ -15,14 +15,14 @@
 						<p class="m-0">Toronto, ON M5L 1E2</p>
 						<div><img
 								class="envelope"
-								src="../images/mail.svg"
+								src="../../images/mail.svg"
 							/><a
 								class="font-weight-bold"
 								href="mailto:hello@policyadvisor.com"
 							>hello@policyadvisor.com</a></div>
 						<div><img
 								class="envelope"
-								src="../images/phone.svg"
+								src="../../images/phone.svg"
 							/><a
 								class="font-weight-bold"
 								href="mailto:hello@policyadvisor.com"
