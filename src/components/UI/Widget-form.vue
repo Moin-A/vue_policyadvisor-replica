@@ -92,8 +92,8 @@
 </template>
 
 <script>
-	import Selectbtn from '../form/Selectbtn_Toggle.vue'
-	import InputBTNTEXT  from '../form/Inputbtn-Text'
+	import Selectbtn from './form/Selectbtn_Toggle.vue'
+	import InputBTNTEXT  from './form/Inputbtn-Text.vue'
 
 	export default {
 		name: 'Widget',
