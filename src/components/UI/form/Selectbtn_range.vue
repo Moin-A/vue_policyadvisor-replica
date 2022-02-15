@@ -1,59 +1,53 @@
-
 <template>
+
 	<div :class="'col-md-' + col">
-		<div>
-			<p>{{titletext}}</p>
-			<div class="row">
-				<div class="col-11 pr-0">
-					<input
-						id="branding_date_of_birth"
-						name="branding_date_of_birth"
-						pattern="[0-9]*"
-						inputmode="numeric"
-						type="text"
-						:placeholder="placeholder"
-						
-						class="form-control form__input form__input--error"
-					/>
+
+		<p>Coverage</p>
+		<div class="row m-0">
+			<div class="col pl-0">
+				<input
+					type="range"
+					class="form-range w-100"
+					id="customRange1"
+				/>
+				<div class="d-flex justify-content-between">
+					<p><small>{{range.min}}</small></p>
+					<p><small>{{range.max}}</small></p>
 				</div>
 			</div>
 		</div>
+
 	</div>
-	
+
 </template>
 
 <script>
 
 
 	export default {
-		name: "InputBTNTEXT",
- 
+
+		name: "BTNRANGE",
+
 		props: {
-				
 			col: {
 				type: Number,
-				default: 5,
-				required: true
+				default: 5
 			},
 			titletext: {
 				type: String,
-				default: "",
-			
+				default: "TERM"
 			},
-			placeholder:{
-				type: String,
-				default: "",
+			range: {
+				type: Object,
+				default: () => ({
+					min: "$25,000",
+					max: "$5 million"
+				})
+
 			}
 
 
-
-
-		},
-
-
-
-
-
+		}
 
 
 
@@ -116,4 +110,3 @@ input[type='radio']:checked + label {
 	color: #fff;
 }
 </style>
-    

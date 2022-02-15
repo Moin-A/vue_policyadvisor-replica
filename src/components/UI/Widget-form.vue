@@ -7,7 +7,6 @@
 				:col="5"
 				:innertext="innerText"
 				inputname="gender"
-				
 			/>
 
 			<Selectbtn
@@ -18,59 +17,32 @@
 
 		</div>
 		<!-- //---Date of Birth-------// -->
-		
+
 		<div class="row mt-3">
 			<InputBTNTEXT
-			:col="5"
-			titletext="Date of Birth"
-			/>	
+				:col="5"
+				titletext="Date of Birth"
+				placeholder="DD/MM/YYYY"
+			/>
 			<InputBTNTEXT
-			:col="5"
-			titletext="Date of Birth"
-			/>	
+				:col="5"
+				placeholder="A1A 1A1"
+				titletext="Postal Code"
+			/>
 
-			
 		</div>
 		<!-- //---TERM-------// -->
 		<div class="row mt-3">
-			<div class="col-5">
-				<div>
-					<p>Term</p>
-					<div class="row">
-						<div class="col-11 pr-0">
-							<select class="w-100 py-2 cursor-pointer form-control">
-								<option value="0">10 years</option>
-								<option value="1">15 Years</option>
-								<option
-									selected
-									value="2"
-								>20 Years</option>
-								<option value="3">25 Years</option>
-								<option value="4">30 Years</option>
-								<option value="5">35 Years</option>
-								<option value="6">40 years</option>
-								<option value="7">To Age 65</option>
-							</select>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-7">
-				<p>Coverage</p>
-				<div class="row m-0">
-					<div class="col pl-0">
-						<input
-							type="range"
-							class="form-range w-100"
-							id="customRange1"
-						/>
-						<div class="d-flex justify-content-between">
-							<p><small>$25,000</small></p>
-							<p><small>$5 million</small></p>
-						</div>
-					</div>
-				</div>
-			</div>
+			<BTNDROPDWN
+				:col="5"
+				titletext="TERM"
+				:Options='["5 Years","15 Years","20 Years","25 Years","30 Years"]'
+			/>
+			<BTNRANGE
+				:col="7"
+				titletext="TERM"
+				:range="{'min':'$25,000','max':'$5 million'}"	
+			/>
 		</div>
 	</div>
 	<div class="form-submit p-4">
@@ -80,12 +52,9 @@
 				<div>---</div>
 			</div>
 			<div class="col m-auto">
-				<button
-					type="submit"
-					class="btn btn-lg text-white"
-				>
-					Compare Quotes
-				</button>
+				<SubmitButton>
+					COMPARE QUOTES
+				</SubmitButton>
 			</div>
 		</div>
 	</div>
@@ -93,7 +62,10 @@
 
 <script>
 	import Selectbtn from './form/Selectbtn_Toggle.vue'
-	import InputBTNTEXT  from './form/Inputbtn-Text.vue'
+	import InputBTNTEXT from './form/Inputbtn-Text.vue'
+	import BTNDROPDWN from './form/Selectbtn_Dropdown.vue'
+	import BTNRANGE from './form/Selectbtn_range.vue'
+	import SubmitButton from "./Buttons/SubmitButton.vue"
 
 	export default {
 		name: 'Widget',
@@ -106,10 +78,14 @@
 				},
 			}
 		},
-		
+
 		components: {
 			Selectbtn,
-			InputBTNTEXT
+			InputBTNTEXT,
+			BTNDROPDWN,
+			BTNRANGE,
+			SubmitButton
+
 		},
 		createperson: function (firstName, lastName) {
 			this.firstName = firstName

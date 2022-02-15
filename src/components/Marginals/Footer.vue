@@ -1,7 +1,7 @@
 <template>
 	<nav>
-		<div class="row text-left justify-content-center">
-			<div class="col-2 ">
+		<div class="row text-left justify-content-xl-center justify-content-between">
+			<div class="col-xl-2  col-lg-3 col-3 col-sm col-12">
 				<a href="/">
 					<img
 						class="logo    pb-4"
@@ -30,7 +30,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="col-2 ">
+			<div class="col-xl-2  col-lg-3 col-3 col-sm col-12">
 				<p>Get Insurance</p>
 				<ul class="p-0">
 					<li class="footer__item"><a href="/">Term Life Insurance</a></li>
@@ -42,7 +42,7 @@
 					<li class="footer__item"><a href="/children-life-insurance/">Children's Insurance<span class="new_tag">NEW</span></a></li>
 				</ul>
 			</div>
-			<div class="col-2 ">
+			<div class="col-xl-2  col-lg-3 col-3 col-sm col-12">
 				<p>Get Insurance</p>
 				<ul class="p-0">
 					<li class="footer__item"><a
@@ -60,7 +60,7 @@
 					<li class="footer__item"><a href="/policyadvisor-live/">PolicyAdvisor LIVE</a></li>
 				</ul>
 			</div>
-			<div class="col-2 ">
+			<div class="col-xl-2  col-lg-3 col-3 col-sm col-12">
 				<p>Get Insurance</p>
 				<ul class="p-0">
 					<li class="footer__item"><a href="/about/">About</a></li>
@@ -72,7 +72,7 @@
 					<li class="footer__item"><a href="/press-release/">Press</a></li>
 				</ul>
 			</div>
-			<div class="col-2">
+			<div class="col-xl-2  col-lg-3 col-3 col-sm col-12">
                   
                         <h5 class="footer__title text-center text-white">Follow us</h5>
                         <ul class="justify-content-around d-flex p-0">
@@ -174,7 +174,7 @@
                         </div>
                         
                     </div>
-                       <div class="col-10"><p class="footer__copyright"><small>© PolicyAdvisor Brokerage (PAB) Inc., is an insurance brokerage licensed to sell life insurance products in Ontario, Alberta and Manitoba. Not available in other provinces. Policy obligations are the sole responsibility of the issuing insurance company. Issuance of coverage is subject to underwriting by the respective insurance company. Please see policy documents for full terms, conditions, and exclusions. The logos and trademarks used here are owned by the respective entities. Refer to our Privacy Policy and Terms of Service sections for additional information.</small></p></div>
+                       <div class="col-12 col-md-10"><p class="footer__copyright"><small>© PolicyAdvisor Brokerage (PAB) Inc., is an insurance brokerage licensed to sell life insurance products in Ontario, Alberta and Manitoba. Not available in other provinces. Policy obligations are the sole responsibility of the issuing insurance company. Issuance of coverage is subject to underwriting by the respective insurance company. Please see policy documents for full terms, conditions, and exclusions. The logos and trademarks used here are owned by the respective entities. Refer to our Privacy Policy and Terms of Service sections for additional information.</small></p></div>
                  
 			</div>
 
@@ -241,9 +241,14 @@ p {
     font-size: 11px;
     line-height: 16px;;
 }
-
+@media screen and (min-width: 1460px) {
 .row {
     margin:0px 80px;
+}
+}
+
+.row {
+    gap:20px;
 }
 
 svg {

@@ -37,7 +37,7 @@
 
 	export default {
 
-		name: "BTNTGL",
+		name: "BTNDROPDWN",
 		created() {
 		this.id = uniqueId()
 		

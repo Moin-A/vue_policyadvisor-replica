@@ -2,6 +2,7 @@
   <LayoutDefault>
   <TopSection/>
   <Features/>
+  <Section_Review/>
   </LayoutDefault>
  
 </template>
@@ -12,6 +13,7 @@
 import TopSection from "./components/Sections/SectionWidget.vue"
 import Features from "./components/Sections/section-features.vue"
 import LayoutDefault from "./components/Layouts/Default_layout.vue"
+import Section_Review from "./components/Sections/Section-review.vue"
 
 export default {
   name: "App",
@@ -19,6 +21,7 @@ export default {
     LayoutDefault,
     TopSection,
     Features,
+    Section_Review
 
 
   },

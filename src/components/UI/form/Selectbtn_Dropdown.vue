@@ -1,59 +1,62 @@
-
 <template>
+
 	<div :class="'col-md-' + col">
 		<div>
 			<p>{{titletext}}</p>
 			<div class="row">
 				<div class="col-11 pr-0">
-					<input
-						id="branding_date_of_birth"
-						name="branding_date_of_birth"
-						pattern="[0-9]*"
-						inputmode="numeric"
-						type="text"
-						:placeholder="placeholder"
-						
-						class="form-control form__input form__input--error"
-					/>
+					<select class="w-100 py-2 cursor-pointer form-control">
+						<option v-for="Option  in Options" :key="Option"  >{{Option}} </option>	
+					</select>
 				</div>
 			</div>
 		</div>
 	</div>
-	
+	<!-- <div class="col-7">
+				<p>Coverage</p>
+				<div class="row m-0">
+					<div class="col pl-0">
+						<input
+							type="range"
+							class="form-range w-100"
+							id="customRange1"
+						/>
+						<div class="d-flex justify-content-between">
+							<p><small>$25,000</small></p>
+							<p><small>$5 million</small></p>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
 </template>
 
 <script>
 
 
 	export default {
-		name: "InputBTNTEXT",
- 
+
+		name: "BTNDROPDWN",
+
 		props: {
-				
 			col: {
 				type: Number,
-				default: 5,
-				required: true
+				default: 5
 			},
 			titletext: {
 				type: String,
-				default: "",
-			
+				default: "TERM"
 			},
-			placeholder:{
-				type: String,
-				default: "",
+
+			Options: {
+				type: Array,
+
+				default: () => (
+					["5 Years","15 Years","20 Years","25 Years","30 Years"]
+
+				)
 			}
-
-
-
-
-		},
-
-
-
-
-
+		}
 
 
 
@@ -116,4 +119,3 @@ input[type='radio']:checked + label {
 	color: #fff;
 }
 </style>
-    
